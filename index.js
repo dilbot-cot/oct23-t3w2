@@ -4,5 +4,7 @@ console.log("Bye bye, terminal app finished");
 
 const pokemon = require('pokemon');
 
-pokemonId = pokemon.getId('Tauros')
-console.log(`Tauros's pokedex ID is ${pokemonId}`);
+let randomPokemon = pokemon.random();
+let pokemonID = pokemon.getId(randomPokemon);
+
+console.log(`The pokedex ID for ${randomPokemon} is ${pokemonID}`);
