@@ -1,10 +1,9 @@
-console.log("Terminal app is running");
+// console.log("Terminal app is running");
 
-console.log("Bye bye, terminal app finished");
+// console.log("Bye bye, terminal app finished");
 
-const pokemon = require('pokemon');
+require('dotenv').config()
+const pokemonPrinterFile = require("./pokemonPrinter");
 
-let randomPokemon = pokemon.random();
-let pokemonID = pokemon.getId(randomPokemon);
-
-console.log(`The pokedex ID for ${randomPokemon} is ${pokemonID}`);
+console.log(process.env.S3_BUCKET)
+pokemonPrinterFile.pokemonPrinter()
