@@ -1,13 +1,13 @@
 
+
 function pokemonPrinter(){
-    const pokemon = require('pokemon');
+	const pokemon = require('pokemon');
 
-    let randomPokemon = pokemon.random();
-    let pokemonID = pokemon.getId(randomPokemon);
+	let randomPokemon = pokemon.random();
 
-    console.log(`The pokedex ID for ${randomPokemon} is ${pokemonID}`);
+	console.log(`Today's lucky Pokemon is ${randomPokemon}`);
 }
 
 module.exports = {
-    pokemonPrinter
+	pokemonPrinter
 }
